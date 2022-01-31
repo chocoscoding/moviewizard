@@ -7,7 +7,7 @@ const Navbar = ({ changect,sendRequest, currentText, actiontype }) => {
 
     function submitform(e){
         e.preventDefault();
-        sendRequest()
+        sendRequest();
     }
   return (
     <div className="navcont">
