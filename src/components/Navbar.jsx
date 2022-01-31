@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Navbar.css";
+import "../styles/Navbar.css";
 import { GoSearch } from "react-icons/go";
 import { Link } from "react-router-dom";
 

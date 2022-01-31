@@ -3,7 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import {switchgenre} from '../genre';
 
-import "../Styles/AllMoviesByGenre.css";
+import "../styles/AllMoviesByGenre.css";
 
 const AllMovies = ({ MoviesData }) => {
   const { results } = MoviesData;

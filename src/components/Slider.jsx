@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useGetTrendsQuery } from "../services/trendingApi";
-import "../Styles/Slider.css";
+import "../styles/Slider.css";
 import { AiFillStar } from "react-icons/ai";
 import { BsDot } from "react-icons/bs";
 import { switchgenre } from "../genre";
