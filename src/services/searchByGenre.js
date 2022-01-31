@@ -1,7 +1,7 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 
 const baseUrl = "https://api.themoviedb.org/3/discover"
-const api_key = "831c226c8b60d13569e80af30352e363";
+const api_key = process.env.REACT_APP_API_KEY;
 
 
 export const searchByGenreApi = createApi({
