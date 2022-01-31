@@ -14,7 +14,7 @@ const Navbar = ({ changect,sendRequest, currentText, actiontype }) => {
       <nav>
           <Link to={`/`}>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/cdportfolio-95923.appspot.com/o/MOVIE%20WIZARD.png?alt=media&token=0a6f6b3e-32e7-45f8-b88f-1b5acb99c593"
+          src="https://firebasestorage.googleapis.com/v0/b/cdportfolio-95923.appspot.com/o/MOVIE%20WIZARD.png?alt=media&token=f4c9a7f5-340d-4d2d-8dc9-c33ed96d8dd4"
           alt="logo"
           />
           </Link>
