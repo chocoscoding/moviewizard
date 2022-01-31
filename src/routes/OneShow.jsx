@@ -21,7 +21,7 @@ const OneShow = () => {
       <div className="maininfo"></div>
       <img src="" alt="" className="poster" />
       <div className="data">
-          <h3 className="title"></h3>
+          <h3 className="title">jkj</h3>
           <h3>genre</h3>
           <h3>genre</h3>
           <h3>genre</h3>
