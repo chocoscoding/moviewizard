@@ -63,10 +63,11 @@ const Slider = () => {
               release_date,
               vote_count,
               vote_average,
+              media_type
             } = item;
             return (
               <div className="slide" key={index} id={id}>
-                <Link className="singlelink" to={`/singleshow/${id}`}>
+                <Link className="singlelink" to={`/singleshow/${id}/${media_type || 'movie'}`}>
                   <img
                     className="backdropimage"
                     src={`https://image.tmdb.org/t/p/original/${backdrop_path}`}

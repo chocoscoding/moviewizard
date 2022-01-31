@@ -3,8 +3,9 @@ import {Navbar  } from '../components';
 import AllMoviesBySearch from '../components/AllMoviesBySearch';
 
 const Search = () => {
-    const [currentText, setCurrentText] = useState('a');
-    const [currentTextC, setCurrentTextC] = useState('a');
+    localStorage.setItem('lastlink', '/search');
+    const [currentText, setCurrentText] = useState('');
+    const [currentTextC, setCurrentTextC] = useState('');
 
     function changect(txt){
         setCurrentText(txt)
@@ -12,9 +13,12 @@ const Search = () => {
     function sendRequest(){
         setCurrentTextC(currentText)
     }
+
   return ( 
       <>
       <Navbar actiontype={`search`} currentText={currentText} sendRequest={sendRequest} changect={changect}/>
+
+
      <AllMoviesBySearch currentTextC={currentTextC}/>
       </>
   )

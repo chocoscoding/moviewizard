@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/singleshow/:id" element={<OneShow/>}/>
+        <Route path="/singleshow/:id/:mediatype" element={<OneShow/>}/>
         <Route path="/search" element={<Search/>}/>
       </Routes>
     </div>

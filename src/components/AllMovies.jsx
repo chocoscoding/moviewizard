@@ -17,10 +17,11 @@ const AllMovies = ({ MoviesData }) => {
               poster_path,
               name,
               original_title,
-              title
+              title,
+              media_type
             } = SingleMovieData;
             return (
-              <Link to={`/singleshow/${id}`} className="movie" key={index}>
+              <Link to={`/singleshow/${id}/${media_type || 'movie'}`} className="movie" key={index}>
                 <div className="imageholder">
                   <img
                     className="backdropimage"
@@ -53,10 +54,11 @@ const AllMovies = ({ MoviesData }) => {
           release_date,
           vote_count,
           vote_average,
-          title
+          title,
+          media_type
         } = SingleMovieData;
         return (
-          <Link to={`/singleshow/${id}`} className="movie" key={index}>
+          <Link to={`/singleshow/${id}/${media_type || 'movie'}`} className="movie" key={index}>
             <div className="imageholder">
               <img
                 className="backdropimage"

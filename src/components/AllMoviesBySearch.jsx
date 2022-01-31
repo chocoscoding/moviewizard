@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import { AllMovies,Loading, Error, Pagination } from '.';
 import {useSearchByNameApiQuery} from '../services/searchByName';
 const AllMoviesBySearch = ({currentTextC}) => {
-    console.log(currentTextC);
     const [page, setPage] = useState(1)
-    const {data, isFetching} = useSearchByNameApiQuery({name: currentTextC, page });
+        const {data, isFetching} = useSearchByNameApiQuery({name: currentTextC, page });
     
-    console.log(data);
     let MoviesData = data;
 
     const changepage = (type)=>{
@@ -37,12 +35,18 @@ const AllMoviesBySearch = ({currentTextC}) => {
         }
     }
 
-    if(isFetching){
-        return <Loading/>
-    }
-    else if(!data){
-        return <Error/>
-    }
+     if(currentTextC === ''){
+        return ( 
+            <h2 style={{color: '#ffffffa3',fontSize: '3em', fontWeight: "900", textAlign: 'center'}}> Start Searching</h2>
+            
+            )
+        }
+        else if(isFetching){
+            return <Loading/>
+        }
+        else if(!data){
+            return <Error/>
+        }
     else{
         return (
             <>

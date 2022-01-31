@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { allGenre } from '../genre';
 import {Slider,AllMoviesByGenre,Navbar  } from '../components';
 
+
 const Home = () => {
+  localStorage.setItem('lastlink', '/');
 
     const [currentGenre, setCurrentGenre] = useState('All')
     function changeGen(id) {
