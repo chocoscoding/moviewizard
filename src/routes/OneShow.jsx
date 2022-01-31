@@ -162,7 +162,6 @@ const OneShow = () => {
         name,
         poster_path,
         overview,
-        runtime,
         tagline,
         title,
         status,
@@ -211,9 +210,6 @@ const OneShow = () => {
               </h1>
               <h1 className="tagline">{tagline}</h1>
               <h1 className="narration">{overview}</h1> <br />
-              <h3>
-                Runtime :<span id="rt">{`${runtime}s`}</span>
-              </h3>
               <h3>
                 Status :<span id="rt">{status}</span>
               </h3>
