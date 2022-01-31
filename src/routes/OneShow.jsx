@@ -29,7 +29,6 @@ const OneShow = () => {
     id: params.id,
     mediatype: params.mediatype,
   });
-  console.log(data);
   const [ytkey, setYtkey] = useState("");
 
   useEffect(() => {
