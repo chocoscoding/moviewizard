@@ -21,7 +21,6 @@ const Home = () => {
               <Slider />
 
 <h2 className='fbgh'>Filter by genre</h2>
-{currentGenre}
 <div className="genreL">
   {allGenre.genres.map((genre, index) => {
     const { name, id } = genre;
