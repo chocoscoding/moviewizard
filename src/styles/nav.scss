@@ -1,0 +1,51 @@
+// #22223B
+// #4A4E69
+// #9A8C98
+// #C9ADA7
+// #F2E9E4
+nav{
+    height: 2.8rem;
+    display: flex;
+    padding: 0 0.41%;
+    justify-content: space-between;
+    align-items: center; 
+
+    img{
+        width: auto;
+        height: 100%; 
+    }
+
+    .searchcont{
+        width: 80%;
+        height: 90%;
+        max-width: 550px;
+        overflow: hidden;
+        border-radius: 10px;
+        display: flex;
+        border: none;
+        
+        #search{
+            border: none;
+            border-radius: 10px;
+            // border: 1px solid white;
+            padding-left: 1.2%;
+            width: 90%;
+            font-size: 1.3em;
+            height: 100%;
+            color: #F2E9E4;
+            background-color: #4A4E69;
+            outline: none;
+        }
+
+        .searchbtn{
+            border: none;
+            width: 10%;
+            height: 100%;
+            background-color: #9A8C98;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 70%;
+        }
+    }
+}

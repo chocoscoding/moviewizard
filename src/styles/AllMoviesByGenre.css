@@ -1,0 +1,297 @@
+.rotating {
+  width: 6em;
+  height: 6em;
+  color: #fff;
+  -webkit-animation: rot 1s ease none infinite;
+          animation: rot 1s ease none infinite;
+}
+
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.ambg {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(220px, 260px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1024px) {
+  .ambg {
+    -ms-grid-columns: (minmax(190px, 220px))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(190px, 220px));
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .ambg {
+    -ms-grid-columns: (minmax(190px, 220px))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(190px, 220px));
+  }
+}
+
+@media screen and (max-width: 443px) {
+  .ambg {
+    -ms-grid-columns: (minmax(240px, 0.95fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(240px, 0.95fr));
+  }
+}
+
+.ambg .movie {
+  text-decoration: none;
+  height: 23rem;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+  background-color: #171a1f;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.ambg .movie .imageholder {
+  width: 99%;
+  margin-left: 0.5%;
+  overflow: hidden;
+  height: 78%;
+}
+
+.ambg .movie .imageholder .backdropimage {
+  height: auto;
+  width: 100%;
+  margin-top: 4px;
+  border-radius: 10px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.ambg .movie .textinfo {
+  height: 22%;
+  overflow: hidden;
+}
+
+.ambg .movie .textinfo .name {
+  font-weight: 600;
+  margin-top: 0.4%;
+  font-size: 0.85em;
+  color: #f6f9ffea;
+}
+
+@media screen and (max-width: 550px) {
+  .ambg .movie .textinfo .name {
+    font-size: 0.91em;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 433px) {
+  .ambg .movie .textinfo .name {
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
+
+.ambg .movie .textinfo .side1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 3px;
+  padding-left: 3px;
+  margin-bottom: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ambg .movie .textinfo .side1 .dag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4px;
+  color: #ebeff8cd;
+}
+
+@media screen and (max-width: 900px) {
+  .ambg .movie .textinfo .side1 .dag {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.ambg .movie .textinfo .side1 .dag h4 {
+  font-weight: 100;
+  font-size: 0.81em;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .ambg .movie .textinfo .side1 .dag h4 {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ambg .movie .textinfo .side1 .dag h4 {
+    font-size: 0.71em;
+  }
+}
+
+.ambg .movie .textinfo .side1 .dag .genreAM {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+  .ambg .movie .textinfo .side1 .dag .genreAM {
+    width: 100%;
+    margin: 1.5px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ambg .movie .textinfo .side1 .dag .genreAM {
+    width: 100%;
+    margin: 2.5px 0;
+  }
+}
+
+@media screen and (max-width: 433px) {
+  .ambg .movie .textinfo .side1 .dag .genreAM {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.ambg .movie .textinfo .side1 .dag .genreAM h4 {
+  margin: 0;
+}
+
+.ambg .movie .textinfo .side1 .dag .genreAM h4 span {
+  border: 1px solid #ffffff12;
+  width: 0.5px;
+  background-color: #ffffff12;
+  margin: 0 3px;
+}
+
+.ambg .movie .textinfo .side1 .rat {
+  margin-top: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ambg .movie .textinfo .side1 .rat h4 {
+  color: #ebeff8cd;
+  font-weight: 100;
+  font-size: 0.81em;
+}
+
+.ambg .movie .textinfo .side1 .rat h4:nth-child(2) {
+  margin: 0 4px;
+  color: #c2cfebcd;
+  font-weight: 100;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.ambg .movie .textinfo .side1 .rat .star {
+  position: relative;
+  top: 10%;
+  color: #ff9900;
+}
+
+.ambg .movie:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+@media screen and (max-width: 513px) and (min-width: 430px) {
+  .ambg .movie {
+    height: 27rem;
+  }
+}
+
+.pagination {
+  width: 100%;
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination .pagichange {
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #171a1f;
+  color: #a8afbd;
+  border: 1px solid #ffffff0e;
+  border-radius: 6px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination .pagichange #p3 {
+  font-weight: 500;
+}
+
+.pagination .pagichange:hover {
+  background-color: transparent;
+  border: 1.5px solid #6998c75a;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=AllMoviesByGenre.css.map */
